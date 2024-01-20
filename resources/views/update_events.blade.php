@@ -3,8 +3,10 @@
 @section('content')
     
     <div class="card my-4">
-        <form action="{{route('saveUpdatedEvents')}}" method="post">
+        <form action="{{route('saveUpdatedEvents',$event->id)}}" method="POST">
             @csrf
+
+            @method ('put')
             <div class="card-body">
                 <div class="row">
                     <div class="col mb-3">

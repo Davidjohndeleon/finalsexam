@@ -18,6 +18,6 @@ Route::get('/',[EventController::class,'index'])->name('event');
 Route::post('/save-events',[EventController::class, 'save_events'])->name('saveEvents');
 Route::get('/delete-events/{id}', [EventController::class, 'delete_events'])->name('removeEvents');
 Route::get('/update-events/{id}', [EventController::class, 'update_events'])->name('updateEvents');
-Route::post('/save-updated-events', [EventController::class, 'save_updated_events'])->name('saveUpdatedEvents');
+Route::put('/save-updated-events/{id}', [EventController::class, 'save_updated_events'])->name('saveUpdatedEvents');
 
 
