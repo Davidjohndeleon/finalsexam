@@ -3,7 +3,9 @@
 @section('content')
     
 
-    <h1>Event Registration System</h1>
+    <header class="text-center">
+        <h1>Event Registration System</h1>
+    </header>
 
     <div class="container">
 
@@ -11,7 +13,7 @@
     <form action="{{ route('saveEvents') }}" method="post" class="col-md-12">
         @csrf
 
-        <div class="form-group row">
+        <div class="row">
             <label for="EventName" class="col-md-2 col-form-label">Event Name:</label>
             <div class="col-md-10">
                 <input class="form-control" type="text" name="EventName" placeholder="Enter Event Name">
