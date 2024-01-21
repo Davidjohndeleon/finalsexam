@@ -16,23 +16,23 @@
             <div class="col-md-10">
                 <input class="form-control" type="text" name="EventName" placeholder="Enter Event Name">
             </div>
-        </div>
+        
 
-        <div class="form-group row">
+        
             <label for="Date" class="col-md-2 col-form-label">Date:</label>
             <div class="col-md-10">
-                <input class="form-control" type="text" name="Date" placeholder="Enter Date">
+                <input class="form-control" type="date" name="Date" placeholder="Enter Date">
             </div>
-        </div>
+        
 
-        <div class="form-group row">
+        
             <label for="Location" class="col-md-2 col-form-label">Location:</label>
             <div class="col-md-10">
                 <input class="form-control" type="text" name="Location" placeholder="Enter Location">
             </div>
-        </div>
+        
 
-        <div class="form-group row">
+        
             <label for="Attendees" class="col-md-2 col-form-label">Attendees:</label>
             <div class="col-md-10">
                 <input class="form-control" type="text" name="Attendees" placeholder="Enter Attendees">
@@ -49,18 +49,18 @@
             <table class="table table-bordered table-hover">
                 <thead class="thead-dark">
                     <tr>
-                        <th>Event Id</th>
+                        
                         <th>Event Name</th>
                         <th>Date</th>
                         <th>Location</th>
-                        <th>Attendees</th>
+                        <th>Attendee</th>
                         <th>Actions</th>
                     </tr>
                 </thead>
                 <tbody>
                     @foreach($events as $event)
                         <tr>
-                            <td>{{ $event->id }}</td>
+                            
                             <td>{{ $event->EventName }}</td>
                             <td>{{ $event->Date }}</td>
                             <td>{{ $event->Location }}</td>
